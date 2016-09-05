@@ -93,6 +93,30 @@ to maximize the screen estate."
 (global-set-key (kbd "M-g o") 'linum-new-mode)   ;; For Linux
 
 
+(prelude-require-package 'which-key)
+(require 'which-key)
+
+(setq which-key-idle-delay 0.4)
+(which-key-mode)
+
+;; location of which-key window. valid values: top, bottom, left, right,
+;; or a list of any of the two. If it's a list, which-key will always try
+;; the first location first. It will go to the second location if there is
+;; not enough room to display any keys in the first location
+(setq which-key-side-window-location 'bottom)
+
+;; max width of which-key window, when displayed at left or right.
+;; valid values: number of columns (integer), or percentage out of current
+;; frame's width (float larger than 0 and smaller than 1)
+(setq which-key-side-window-max-width 0.33)
+
+;; max height of which-key window, when displayed at top or bottom.
+;; valid values: number of lines (integer), or percentage out of current
+;; frame's height (float larger than 0 and smaller than 1)
+(setq which-key-side-window-max-height 0.25)
+
+(setq which-key-separator "➝" )
+(setq which-key-unicode-correction 3)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; ui.el ends here

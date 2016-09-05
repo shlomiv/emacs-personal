@@ -37,6 +37,7 @@
 (setq org-html-htmlize-output-type 'css)
 (require 'htmlize)
 (require 'ox-reveal)
+(require 'org-table)
 (setq org-reveal-root "file:///Users/vaknins9/projects/reveal.js")
 
 ;;(require 'ox-ioslide)

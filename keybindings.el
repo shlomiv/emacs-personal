@@ -22,9 +22,7 @@
 (prelude-require-package 'multiple-cursors)
 (prelude-require-package 'phi-search)
 (prelude-require-package 'ace-jump-mode)
-(prelude-require-package 'origami)
 (prelude-require-package 'helm-core)
-(prelude-require-package 'which-key)
 (prelude-require-package 'rainbow-identifiers)
 (prelude-require-package 'fancy-narrow)
 (prelude-require-package 'inf-clojure)
@@ -32,11 +30,6 @@
 
 (require 'multiple-cursors)
 (require 'ace-jump-mode)
-(require 'origami)
-(require 'which-key)
-
-(setq which-key-idle-delay 0.4)
-(which-key-mode)
 
 
 ;; enable origami mode
