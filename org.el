@@ -18,10 +18,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Code:
-(add-to-list 'load-path "~/org-mode/org-mode/lisp")
-(add-to-list 'load-path "~/org-mode/org-mode/contrib/lisp" t)
+(add-to-list 'load-path "~/org-mode/lisp")
+(add-to-list 'load-path "~/org-mode/contrib/lisp" t)
 
 (prelude-require-package 'ox-reveal)
+(prelude-require-package 'org-ref)
+
 (require 'org)
 (require 'ob-clojure)
 (require 'ox-latex)
