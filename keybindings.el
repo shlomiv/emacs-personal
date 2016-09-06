@@ -32,9 +32,6 @@
 (require 'ace-jump-mode)
 
 
-;; enable origami mode
-(global-origami-mode)
-
 ;;; Key bindings
 
 ;; Origami - folds code
