@@ -18,11 +18,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Code:
-(add-to-list 'load-path "~/org-mode/lisp")
-(add-to-list 'load-path "~/org-mode/contrib/lisp" t)
-
-(prelude-require-package 'ox-reveal)
-(prelude-require-package 'org-ref)
 
 (require 'org)
 (require 'ob-clojure)
@@ -36,11 +31,7 @@
 (require 'gnuplot)
 (setq org-html-htmlize-output-type 'css)
 (require 'htmlize)
-(require 'ox-reveal)
 (require 'org-table)
-(setq org-reveal-root "file:///Users/vaknins9/projects/reveal.js")
-
-;;(require 'ox-ioslide)
 
 (require 'ox-html)
 
@@ -581,8 +572,6 @@ The format is determined by `org-time-clocksum-format',
 (setq org-ref-bibliography-notes "~/org/bibliography/notes.org"
       org-ref-default-bibliography '("~/org/bibliography/references.bib")
       org-ref-pdf-directory "~/org/bibliography/bibtex-pdfs/")
-
-(require 'org-ref)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; org.el ends here
